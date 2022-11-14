@@ -1,0 +1,202 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin:0;
+    background: rgb(17, 17, 17);
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("https://images.hdqwalls.com/download/beautiful-landscape-5k-c1-1920x1080.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    font-size: 120%;
+}
+.card{
+    background: rgba(13, 13, 13, 0.578);
+    color: whitesmoke;
+    padding-top: 30px;
+    padding-left: 30px;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 20px;
+    margin-left: 500px;
+    margin-top: -400px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    margin: 10px;
+    border-radius: 50%;
+    border: none;
+    height: 40px;
+    width: 40px;
+    outline: none;
+    background: #00000083;
+    color: whitesmoke;
+    margin-top: 0px;
+
+}
+button:hover{
+    background: #5e5e5e;
+}
+
+.name{
+    /* background-color: chartreuse; */
+    display:inline-flex;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: -25px;
+    text-align: center;
+    text-shadow: #000000;
+    margin-left: 70px;
+    border-radius: 20px;
+    
+}
+#cityName{
+    margin-left: 5px;
+    padding-left: 2px;
+}
+
+.search-bar{
+    border: none;
+    outline: none;
+    padding: 8px 50px;
+    margin-top: -40px;
+    border-radius: 18px;
+    background: #0000005f;
+    color: rgb(201, 185, 185);
+    font-family: inherit;
+    font-size: 105%;
+    transition: 0.2s ease-in-out;
+    width: calc(100% - 100px)
+}
+
+
+#weatherContainer{
+    /* background-color: #342c2c; */
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    width: 100%;
+    /* border: 5px solid rgb(96, 96, 96); */
+    /* border-radius: 10px; */
+    /* padding-top: -70px; */
+    margin-top: 20px;
+    padding-left: 10px;
+
+}
+
+/* #iconsContainer{
+    background-color: #562;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 97%;
+    padding-top: -10px;
+    border-radius: 10px;
+} */
+
+.icons{
+    background-color: rgba(0, 0, 0, 0.484);
+    display:inline-block;
+    /* position:relative; */
+    /* float: left; */
+    height: 90%;
+    width: 16%;
+    margin-top: 10px;
+    margin-left: 10px;
+    /* border: 5px solid #562; */
+    border-radius: 30px;
+    border-style:double;
+    border-width: 5px;
+    border-color: #000000;
+    padding: 15px;
+    padding-left: 20px;
+}
+
+.image{
+    /* background-color: beige; */
+    height: 140px;
+    width: 100%;
+}
+
+.imgClass{
+    background-color: rgba(0, 0, 0, 0.356);
+    height: 100px;
+    /* padding-left: 120px; */
+    margin-top: 10px;
+    width: 100px;
+    margin-left: 150px;
+    border-radius: 120px;
+}
+
+.weather{
+    background-color: rgba(255, 252, 252, 0.818);
+    height: 40px;
+    margin: 5px;
+    padding-top: 10px;
+    border-radius:20px;
+    text-align: center;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    border-width: 10px;
+}
+
+.minValues{
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    height: 25px;
+    width: 85px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.maxValues{
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    height: 25px;
+    width: 85px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.desc{
+    /* background-color: aquamarine; */
+    margin-top: -120px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-size:18px;
+    font-weight:bold;
+    color: whitesmoke;
+    text-decoration: double;
+    text-shadow: rgb(255, 255, 255);
+}
+.footer{
+    color:whitesmoke;
+    background-blend-mode: overlay;
+    background-color:rgba(0, 0, 0, 0.926);
+    margin-bottom: 5px;
+    margin-top: 840px;
+    margin-right: 20px;
+    width: 1000px;
+    height: 150px;
+    /* text-align:end; */
+    font-family:cursive;
+    font-size:30px;
+    /* padding-bottom: 80px; */
+    padding-left: 32px;
+    font-style:oblique;
+    /* padding-right: 20px; */
+    border-radius: 100px;
+    text-decoration: underline;
+}
