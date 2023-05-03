@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+
+    <title>Weather App</title>
+</head>
+<body onload="DefaultScreen()">
+    <div class="card">
+        <h1 id="Para1"> Weather Forecast</h1>
+        <div class="search">
+            <p id="inputContainer">
+                <input type="text" class="search-bar" id="cityInput" placeholder="Search">
+            </p>
+        <button type="button" onclick="GetInfo()"> 
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg"><path d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"></path></svg>
+        </button><br><br>        
+        </div>
+        <div class="name">
+            <p><h2>Weather In </h2>
+            <h2 id="cityName"> Delhi</h2>
+            </p>
+        </div>
+    </div>
+    
+    
+    <div id = "weatherContainer">
+        <div id="iconsContainer" class="row">    
+            <div class = "icons" class="column">
+                <p class="weather" id="day1"></p>
+                <div class="image"><img src="https://tse3.mm.bing.net/th?id=OIP.RnBI6YN03X7YNnqu2SzPSAAAAA&pid=Api&P=0" class="imgClass" id="img1"></div>
+                <div class="desc">
+                <p class="minValues" id="day1Min">Loading...</p><br>
+                <p class="maxValues" id="day1Max">Loading...</p>
+                <p class="humidity" id="day1Hum">Loading...</p>
+                <p class="windSpeed" id="day1Wind">Loading...</p>
+                <p class="date" id="day1Date">Loading...</p>
+                </div>
+
+            </div>
+            <div class = "icons" class="column">
+                <p class="weather" id="day2"></p>
+                <div class="image"><img src="https://tse3.mm.bing.net/th?id=OIP.RnBI6YN03X7YNnqu2SzPSAAAAA&pid=Api&P=0" class="imgClass" id="img2"></div>
+                <div class="desc">
+                <p class="minValues" id="day2Min">Loading...</p><br>
+                <p class="maxValues" id="day2Max">Loading...</p>
+                <p class="humidity" id="day2Hum">Loading...</p>
+                <p class="windSpeed" id="day2Wind">Loading...</p>
+                <p class="date" id="day2Date">Loading...</p>
+                </div>
+                
+            </div>
+            <div class = "icons" class="column">
+                <p class="weather" id="day3"></p>
+                <div class="image"><img src="https://tse3.mm.bing.net/th?id=OIP.RnBI6YN03X7YNnqu2SzPSAAAAA&pid=Api&P=0" class="imgClass" id="img3"></div>
+                <div class="desc">
+                    
+                <p class="minValues" id="day3Min">Loading...</p><br>
+                <p class="maxValues" id="day3Max">Loading...</p>
+                <p class="humidity" id="day3Hum">Loading...</p>
+                <p class="windSpeed" id="day3Wind">Loading...</p>
+                <p class="date" id="day3Date">Loading...</p>
+
+                </div>
+            </div>
+            <div class = "icons" class="column">
+                <p class="weather" id="day4"></p>
+                <div class="image"><img src="https://tse3.mm.bing.net/th?id=OIP.RnBI6YN03X7YNnqu2SzPSAAAAA&pid=Api&P=0" class="imgClass" id="img4"></div>
+                <div class="desc">
+                    <p class="minValues" id="day4Min">Loading...</p><br>
+                    <p class="maxValues" id="day4Max">Loading...</p>
+                    <p class="humidity" id="day4Hum">Loading...</p>
+                    <p class="windSpeed" id="day4Wind">Loading...</p>
+                    <p class="date" id="day4Date">Loading...</p>
+
+                </div>
+            </div>
+            <div class = "icons" class="column">
+                <p class="weather" id="day5"></p>
+                <div class="image"><img src="https://tse3.mm.bing.net/th?id=OIP.RnBI6YN03X7YNnqu2SzPSAAAAA&pid=Api&P=0" class="imgClass" id="img5"></div>
+                <div class="desc">
+                    <p class="minValues" id="day5Min">Loading...</p><br>
+                <p class="maxValues" id="day5Max">Loading...</p>
+                <p class="humidity" id="day5Hum">Loading...</p>
+                <p class="windSpeed" id="day5Wind">Loading...</p>
+                <p class="date" id="day5Date">Loading...</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- <div class="footer">
+        <h3>Designed And Developed By Alisha Reddy Konapu</h3>
+    </div> -->
+
+
+        <script src="index.js"></script>
+
+
+</body>
+</html>
